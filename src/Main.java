@@ -1,7 +1,7 @@
 
 /**
  * 主函数入口类
- * @author wangfujie
+ * @author wangfj
  */
 public class Main {
 

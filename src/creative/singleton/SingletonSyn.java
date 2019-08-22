@@ -1,4 +1,4 @@
-package singleton;
+package creative.singleton;
 
 /**
  * 单例模式，线程安全
