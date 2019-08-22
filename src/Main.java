@@ -1,4 +1,3 @@
-import singleton.Singleton;
 
 /**
  * 主函数入口类
