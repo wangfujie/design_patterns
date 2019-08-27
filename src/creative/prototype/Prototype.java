@@ -26,12 +26,12 @@ public class Prototype implements Cloneable, Serializable {
      * 要实现深复制，需要采用流的形式读入当前对象的二进制输入，在写出二进制数据对应的对象。
      */
     public Prototype deepClone() throws IOException, ClassNotFoundException {
-        //写入当前对象的二进制流
+        //写入当前对象的二进制流（序列化）
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         ObjectOutputStream oos = new ObjectOutputStream(bos);
         oos.writeObject(this);
 
-        //读出二进制产生的新对象
+        //读出二进制产生的新对象（反序列化）
         ByteArrayInputStream inputStream = new ByteArrayInputStream(bos.toByteArray());
         ObjectInputStream ois = new ObjectInputStream(inputStream);
 
