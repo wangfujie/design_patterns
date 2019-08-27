@@ -6,6 +6,10 @@ import java.io.*;
  * 原型模式：将一个对象作为原型，对其进行复制、克隆，产生一个和原理对象类似的新对象。
  * 实现Cloneable接口，它是个空接口，做标记用（标记接口）
  *
+ * 场景：短时间大量创建对象时，new方式效率低，原型模式创建对象效率高
+ * 一般和工厂方法模式一起使用，通过clone的方法创建一个对象，然后由工厂方法提供给调用者
+ *      spring中的bean的创建实际就是两种：单例模式和原型模式。（@Scope注解的singleton和prototype属性），当然，原型模式需要和工厂模式搭配使用
+ *
  * @author wangfj
  */
 public class Prototype implements Cloneable, Serializable {
