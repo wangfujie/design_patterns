@@ -1,7 +1,7 @@
 package structural.decorator;
 
 /**
- * 适配器模式：
+ * 装饰模式：
  *
  * @author wangfj
  */
